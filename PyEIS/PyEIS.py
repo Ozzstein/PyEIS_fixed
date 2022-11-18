@@ -4698,7 +4698,7 @@ class EIS_exp:
         for i in range(len(self.df)):
             ax.plot(self.df[i].re, self.df[i].im, marker='o', ms=4, lw=2, color=colors[i], ls='-', label=self.label_cycleno[i])
             if fitting == 'on':
-                ax.plot(self.circuit_fit[i].values.real, -self.circuit_fit[i].values.imag, lw=0, marker='o', ms=8, mec='r', mew=1, mfc='none', label='')
+                ax.plot(self.circuit_fit[i].values.real, -self.circuit_fit[i].values.imag, lw=0, marker='o', ms=8, mec='r', mew=1, mfc='none', label='') #fixed plotting
 
         ### Bode Plot
         if bode=='on':
